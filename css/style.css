@@ -1,11 +1,11 @@
-/* Estilos Gerais*/
-body{
-	font-family: Arial, Helvetica, sans-serif;
+/* Estilos Gerais */
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-	font-family: Georgia,"Times New Roman", serif;
+p {
+	font-family: Georgia, "Times New Roman", serif;
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -26,30 +26,53 @@ p{
 	border-color: #fff;
 }
 
-/*Header*/
+.btn.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+}
 
-.header{
+.subtitulo {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.subtitulo:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px auto;
+}
+
+/* Header */
+
+.header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: #fec63e; /*amrelo padrão*/
+	background: #fec63e; /* Amarelo */
 	padding: 15px 0;
-
+	z-index: 10;
 }
 
-.header_menu{
+.header_menu {
 	text-align: right;
-
 }
 
-.header_menu ul li{
+.header_menu ul li {
 	display: inline-block;
 	margin-left: 25px;
 	margin-top: 20px;
-
 }
 
-.header_menu ul li a{
+.header_menu ul li a {
 	color: #000;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -59,10 +82,11 @@ p{
 	padding: 10px 0;
 }
 
-.header_menu ul li a:hover{
-	color: #fff;
+.header_menu ul li a:hover {
+	color: #FFF;
 }
-/*Introdução*/
+
+/* Introdução */
 
 .introducao {
 	width: 100%;
@@ -88,7 +112,7 @@ p{
 	color: white;
 }
 
-.quote-externo p{
+.quote-externo p {
 	font-style: italic;
 }
 
@@ -101,7 +125,6 @@ p{
 	margin: 14px auto 10px auto;
 }
 
-
 .quote-externo cite {
 	font-style: normal;
 	font-weight: bold;
@@ -109,3 +132,80 @@ p{
 	letter-spacing: .1em;
 }
 
+/*Produtos*/
+
+.produtos {
+	padding: 60px 0;
+}
+
+.produtos_lista li{
+	background: #fec63e;
+	text-align: center;
+}
+
+.produtos_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+}
+
+.produtos_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 2px auto;
+}
+
+.produtos_lista li p {
+	padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+	background: #000;
+	padding: 20px;
+}
+
+.call {
+	padding-top: 40px;
+	text-align: center;
+	clear: both;
+}
+
+.call p{
+	margin-bottom: 20px;
+}
+
+/*Portifólio*/
+
+.portifolio{
+	width: 100%;
+	background: #000;
+	padding: 40px 0;
+}
+
+.portifolio .subtitulo:after{
+	color:#fec63e;
+}
+
+.portifolio .subtitulo{
+	color:#fec63e;
+}
+
+.portfolio_lista li:last-child {
+	margin-top: 20px;
+}
+
+.portifolio .call p{
+	color: #FFF;
+}
+
+/*Qualidade*/
+
+.qualidade {
+	padding: 60px 0;
+}
